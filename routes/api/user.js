@@ -1,9 +1,9 @@
 const express = require('express')
-const { check, validationResult } = require('express-validator')
 var gravatar = require('gravatar')
+const { check, validationResult } = require('express-validator')
 const jwt = require('jsonwebtoken')
-const userModel = require('../../models/User')
 const config = require('config')
+const userModel = require('../../models/User')
 
 const router = express.Router()
 
