@@ -1,8 +1,8 @@
 const express = require('express')
-
+const userAuth = require('../../middleware/user')
 const router = express.Router()
 
-router.get('/', (req, res) => {
+router.get('/', userAuth, (req, res) => {
   res.send('hello')
 })
 
